@@ -1,0 +1,1 @@
+* * * * * /code/scheduler/run.sh /code/src/criptomonitor/cripto_data_etl.py >> /var/log/cron.log 2>&1

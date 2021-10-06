@@ -15,7 +15,7 @@ COPY ./ /code/
 RUN apt-get update && apt-get -y install cron
 
 # Copy crontab file to the cron.d directory
-COPY crontab /etc/cron.d/crontab
+COPY scheduler/crontab /etc/cron.d/crontab
 
 # Give execution rights on the cron job
 RUN chmod 0644 /etc/cron.d/crontab
