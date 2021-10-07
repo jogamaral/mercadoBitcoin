@@ -8,9 +8,6 @@ ENV PYTHONPATH=/code/src
 ADD ./containers/pipelinerunner/requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-# copy repo
-COPY ./ /code/
-
 # Install cron
 RUN apt-get update && apt-get -y install cron
 

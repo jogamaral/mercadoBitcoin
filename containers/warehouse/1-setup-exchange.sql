@@ -1,7 +1,5 @@
-DROP TABLE IF EXISTS coin.cripto;
-DROP SCHEMA IF EXISTS coin;
-CREATE SCHEMA coin;
-CREATE TABLE coin.cripto (
+CREATE SCHEMA IF NOT EXISTS coin;
+CREATE TABLE IF NOT EXISTS coin.cripto (
     token VARCHAR(50),
     high NUMERIC(16,8),
     low NUMERIC(16,8),
